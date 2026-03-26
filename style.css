@@ -2,9 +2,17 @@
 :root {
   --gold: #c9a84c;
   --gold-lt: #e3c87a;
+
+  /*green tones */
   --g-deep: #1a2e22;
   --g-mid: #2b4535;
   --g-soft: #3d5a47;
+
+  /* brown tones */
+  --g-deep:#2c1f0e;
+  --g-mid:#4a3520;
+  --g-soft:#6b4e2f;
+
   --cream: #f5efe4;
   --cream-dk: #e8dece;
   --txt: #4a4a44;
@@ -177,7 +185,11 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  /* green */
   background: rgba(26, 46, 34, .97);
+
+  /* brown */
+  background: rgba(44,31,14,.97);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(201, 168, 76, .18);
   transition: box-shadow .3s
@@ -317,6 +329,11 @@ nav.scrolled {
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse 70% 60% at 65% 40%, rgba(43, 69, 53, .6), transparent 70%), linear-gradient(135deg, #0e1c15, #1a2e22 50%, #0f1f17)
+}
+
+.hero-bg{
+  background:radial-gradient(ellipse 70% 60% at 65% 40%,rgba(74,53,32,.6),transparent 70%),
+  linear-gradient(135deg,#1a0f05,#2c1f0e 50%,#1f1508);
 }
 
 .hero-grain {
@@ -599,7 +616,7 @@ nav.scrolled {
   height: 100%;
   object-fit: cover;
   transition: transform .7s cubic-bezier(.25, .46, .45, .94);
-  filter: brightness(.8) sepia(20%)
+  filter: brightness(1.0) sepia(20%)
 }
 ¡¡
 .svc-card:hover img {
