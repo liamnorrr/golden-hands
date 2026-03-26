@@ -3,11 +3,11 @@
   --gold: #c9a84c;
   --gold-lt: #e3c87a;
 
-  /*green tones */
+  /*green tones
   --g-deep: #1a2e22;
   --g-mid: #2b4535;
   --g-soft: #3d5a47;
-
+  */
   /* brown tones */
   --g-deep:#2c1f0e;
   --g-mid:#4a3520;
@@ -185,9 +185,9 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  /* green */
+  /* green
   background: rgba(26, 46, 34, .97);
-
+  */
   /* brown */
   background: rgba(44,31,14,.97);
   backdrop-filter: blur(12px);
@@ -325,11 +325,13 @@ nav.scrolled {
   overflow: hidden
 }
 
+/* green tones
 .hero-bg {
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse 70% 60% at 65% 40%, rgba(43, 69, 53, .6), transparent 70%), linear-gradient(135deg, #0e1c15, #1a2e22 50%, #0f1f17)
 }
+  */
 
 .hero-bg{
   background:radial-gradient(ellipse 70% 60% at 65% 40%,rgba(74,53,32,.6),transparent 70%),
