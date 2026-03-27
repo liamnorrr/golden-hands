@@ -11,7 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="/assets/imgs/gh_logo.png">
+  <link rel="icon" type="image/png" href="./assets/imgs/gh_logo.png" />
 </head>
 
 <body>
@@ -307,7 +307,112 @@
           class="svc-book">Book
           →</a>
       </div>
+    </div>
+    <!-- MORE SERVICES -->
+    <div class="more-services">
+      <div class="wrap">
+        <div class="more-header reveal">
+          <span class="eyebrow">Beyond Massage</span>
+          <h2 class="section-title" style="color:var(--cream)">More Services</h2>
+        </div>
+        <div class="more-grid">
 
+          <!-- Facial Card -->
+          <div class="more-card reveal">
+            <!-- <div class="more-card-img">
+              <img src="./assets/imgs/custom_facial.jpg" alt="Facial Services" />
+            </div> -->
+            <div class="more-card-body">
+              <!-- <h3>Facial Treatments</h3>
+              <p>Golden Hands has been proudly serving the Santa Clarita community since 2008. We provide superior
+                quality facial services at reasonable prices so we become part of your routine — not just a luxury.</p> -->
+              <div class="facial-services">
+                <div class="facial-item">
+                  <div class="facial-info">
+                    <span class="facial-name">Custom Facial</span>
+                    <span class="facial-desc">Deep pore cleansing, skin analysis, exfoliation, extractions, conditioning
+                      masque, European massage, toning, moisturize and sun protection therapy.</span>
+                  </div>
+                  <div class="p-item">
+                    <span class="p-amt">$80</span>
+                    <span class="p-dur">60 mins</span>
+                  </div>
+                </div>
+                <div class="facial-item">
+                  <div class="facial-info">
+                    <span class="facial-name">Express Facial</span>
+                    <span class="facial-desc">Maximum results in minimum time. Cleansing with steam, skin analysis,
+                      exfoliation, extractions, conditioning masque, toning, moisturize and sun protection
+                      therapy.</span>
+                  </div>
+                  <div class="p-item">
+                    <span class="p-amt">$50</span>
+                    <span class="p-dur">30 mins</span>
+                  </div>
+                </div>
+              </div>
+              <!-- <a href="#contact" class="btn btn-gold" style="margin-top:1.5rem">Book Facial</a> -->
+            </div>
+          </div>
+
+          <!-- Waxing Card -->
+          <div class="more-card reveal">
+            <!-- <div class="more-card-img">
+              <img src="./assets/imgs/waxing.jpg" alt="Waxing Services" />
+            </div> -->
+            <div class="more-card-body">
+              <h3>Waxing Services</h3>
+              <p>Smooth, professional waxing for both women and men. We use high-quality wax to ensure a comfortable
+                experience with long-lasting results.</p>
+              <button class="btn btn-gold wax-toggle" onclick="toggleWax(this)">View Prices ↓</button>
+
+              <!-- Wax Price List (hidden by default) -->
+              <div class="wax-prices" id="wax-prices">
+                <div class="wax-grid">
+                  <div class="wax-table">
+                    <h4 class="wax-title">Women</h4>
+                    <div class="wax-row"><span>Eyebrow</span><span>$15</span></div>
+                    <div class="wax-row"><span>Upper Lip</span><span>$10</span></div>
+                    <div class="wax-row"><span>Chin</span><span>$10</span></div>
+                    <div class="wax-row"><span>Cheeks</span><span>$15</span></div>
+                    <div class="wax-row"><span>Full Face</span><span>$40</span></div>
+                    <div class="wax-row"><span>Under Arm</span><span>$20</span></div>
+                    <div class="wax-row"><span>Half Arm</span><span>$25</span></div>
+                    <div class="wax-row"><span>Full Arm</span><span>$50</span></div>
+                    <div class="wax-row"><span>Half Leg</span><span>$35</span></div>
+                    <div class="wax-row"><span>Full Leg</span><span>$60</span></div>
+                    <div class="wax-row"><span>Bikini</span><span>$40</span></div>
+                    <div class="wax-row"><span>Buttocks</span><span>$40</span></div>
+                    <div class="wax-row"><span>Brazilian</span><span>$50</span></div>
+                  </div>
+                  <div class="wax-table">
+                    <h4 class="wax-title">Men</h4>
+                    <div class="wax-row"><span>Eyebrow</span><span>$15</span></div>
+                    <div class="wax-row"><span>Nose</span><span>$10</span></div>
+                    <div class="wax-row"><span>Ears</span><span>$10</span></div>
+                    <div class="wax-row"><span>Under Arm</span><span>$25</span></div>
+                    <div class="wax-row"><span>Half Arm</span><span>$30</span></div>
+                    <div class="wax-row"><span>Full Arm</span><span>$60</span></div>
+                    <div class="wax-row"><span>Shoulder/Pect</span><span>$30</span></div>
+                    <div class="wax-row"><span>Chest</span><span>$40+</span></div>
+                    <div class="wax-row"><span>Back</span><span>$55+</span></div>
+                    <div class="wax-row"><span>Half Leg</span><span>$40</span></div>
+                    <div class="wax-row"><span>Full Leg</span><span>$70</span></div>
+                    <div class="wax-row"><span>Bikini</span><span>$40</span></div>
+                    <div class="wax-row"><span>Buttocks</span><span>$40</span></div>
+                    <div class="wax-row"><span>Brazilian</span><span>$60</span></div>
+                    <div class="wax-row"><span>Toes</span><span>$10</span></div>
+                  </div>
+                </div>
+                <!-- <a href="#contact" class="btn btn-gold" style="margin-top:1.5rem">Book Waxing</a> -->
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- TESTIMONIALS -->
@@ -323,7 +428,10 @@
       <div class="t-track">
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"Had a much needed deep tissue massage from Sasha. She was excellent, checked in to see what I wanted to focus on and the amount of pressure needed and maintained it throughout the massage. Rooms were clean and was overall relaxing with no noise from outside - it's a straight up no frills massage spot. Good experience and Sasha did a great job, I would return for sure :)"</p>
+          <p class="r-text">"Had a much needed deep tissue massage from Sasha. She was excellent, checked in to see what
+            I wanted to focus on and the amount of pressure needed and maintained it throughout the massage. Rooms were
+            clean and was overall relaxing with no noise from outside - it's a straight up no frills massage spot. Good
+            experience and Sasha did a great job, I would return for sure :)"</p>
           <div class="r-auth">
             <div class="r-av">B</div>
             <div>
@@ -334,7 +442,9 @@
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I've been going to go Golden Hands pretty much since they opened. I have had some back issues over the years that required professional deep tissue massage. I even came in one time hunched over in pain and they took great care of me."</p>
+          <p class="r-text">"I've been going to go Golden Hands pretty much since they opened. I have had some back
+            issues over the years that required professional deep tissue massage. I even came in one time hunched over
+            in pain and they took great care of me."</p>
           <div class="r-auth">
             <div class="r-av">R</div>
             <div>
@@ -345,7 +455,10 @@
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I went in to this place for the first time. Everyone working said hello and was friendly! I just learned about a Thai herbal massage and let me tell you! Hands down the best massage I've ever had in my entire life. I will never get another kind of massage in my life! So relaxing, so calming, just amazing!!!!"</p>
+          <p class="r-text">"I went in to this place for the first time. Everyone working said hello and was friendly! I
+            just learned about a Thai herbal massage and let me tell you! Hands down the best massage I've ever had in
+            my entire life. I will never get another kind of massage in my life! So relaxing, so calming, just
+            amazing!!!!"</p>
           <div class="r-auth">
             <div class="r-av">Q</div>
             <div>
@@ -356,7 +469,10 @@
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I have been a customer of this spa for eight years. The spa is clean, has a feeling of good energy, and the quality of their work is consistently good. I have tried several Thai massage spas, but I keep coming back to Golden Hands. The prices are very fair for the work that they do and I would not hesitate to recommend this spa to my friends."</p>
+          <p class="r-text">"I have been a customer of this spa for eight years. The spa is clean, has a feeling of good
+            energy, and the quality of their work is consistently good. I have tried several Thai massage spas, but I
+            keep coming back to Golden Hands. The prices are very fair for the work that they do and I would not
+            hesitate to recommend this spa to my friends."</p>
           <div class="r-auth">
             <div class="r-av">J</div>
             <div>
@@ -367,8 +483,10 @@
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I have had three massages now, by two different therapists. I have a pinched nerve in my neck that has left me in a lot of pain regularly. Every time I walk out after getting a massage, I have significantly less pain, and my nerve damage gets better (less) with each visit.
-Highly recommend"</p>
+          <p class="r-text">"I have had three massages now, by two different therapists. I have a pinched nerve in my
+            neck that has left me in a lot of pain regularly. Every time I walk out after getting a massage, I have
+            significantly less pain, and my nerve damage gets better (less) with each visit.
+            Highly recommend"</p>
           <div class="r-auth">
             <div class="r-av">C</div>
             <div>
@@ -379,7 +497,8 @@ Highly recommend"</p>
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"Came in today for the first time. Tina was helpful and professional and Ava did a spectacular job. Will certainly be back."</p>
+          <p class="r-text">"Came in today for the first time. Tina was helpful and professional and Ava did a
+            spectacular job. Will certainly be back."</p>
           <div class="r-auth">
             <div class="r-av">A</div>
             <div>
@@ -390,8 +509,11 @@ Highly recommend"</p>
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I've been in terrible pain last several weeks and today I went to go see if they take walk ins and they do
-They gave me a 30 minute massage and very professional treatment from the moment I walked in I will definitely be returning and letting my friends and family to come here prices are reasonable AAA massage therapy glad I've found my massage place here locally."</p>
+          <p class="r-text">"I've been in terrible pain last several weeks and today I went to go see if they take walk
+            ins and they do
+            They gave me a 30 minute massage and very professional treatment from the moment I walked in I will
+            definitely be returning and letting my friends and family to come here prices are reasonable AAA massage
+            therapy glad I've found my massage place here locally."</p>
           <div class="r-auth">
             <div class="r-av">M</div>
             <div>
@@ -403,7 +525,10 @@ They gave me a 30 minute massage and very professional treatment from the moment
         <!-- duplicate set for seamless infinite scroll -->
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"Had a much needed deep tissue massage from Sasha. She was excellent, checked in to see what I wanted to focus on and the amount of pressure needed and maintained it throughout the massage. Rooms were clean and was overall relaxing with no noise from outside - it's a straight up no frills massage spot. Good experience and Sasha did a great job, I would return for sure :)"</p>
+          <p class="r-text">"Had a much needed deep tissue massage from Sasha. She was excellent, checked in to see what
+            I wanted to focus on and the amount of pressure needed and maintained it throughout the massage. Rooms were
+            clean and was overall relaxing with no noise from outside - it's a straight up no frills massage spot. Good
+            experience and Sasha did a great job, I would return for sure :)"</p>
           <div class="r-auth">
             <div class="r-av">B</div>
             <div>
@@ -414,7 +539,9 @@ They gave me a 30 minute massage and very professional treatment from the moment
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I've been going to go Golden Hands pretty much since they opened. I have had some back issues over the years that required professional deep tissue massage. I even came in one time hunched over in pain and they took great care of me."</p>
+          <p class="r-text">"I've been going to go Golden Hands pretty much since they opened. I have had some back
+            issues over the years that required professional deep tissue massage. I even came in one time hunched over
+            in pain and they took great care of me."</p>
           <div class="r-auth">
             <div class="r-av">R</div>
             <div>
@@ -425,7 +552,10 @@ They gave me a 30 minute massage and very professional treatment from the moment
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I went in to this place for the first time. Everyone working said hello and was friendly! I just learned about a Thai herbal massage and let me tell you! Hands down the best massage I've ever had in my entire life. I will never get another kind of massage in my life! So relaxing, so calming, just amazing!!!!"</p>
+          <p class="r-text">"I went in to this place for the first time. Everyone working said hello and was friendly! I
+            just learned about a Thai herbal massage and let me tell you! Hands down the best massage I've ever had in
+            my entire life. I will never get another kind of massage in my life! So relaxing, so calming, just
+            amazing!!!!"</p>
           <div class="r-auth">
             <div class="r-av">Q</div>
             <div>
@@ -436,7 +566,10 @@ They gave me a 30 minute massage and very professional treatment from the moment
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I have been a customer of this spa for eight years. The spa is clean, has a feeling of good energy, and the quality of their work is consistently good. I have tried several Thai massage spas, but I keep coming back to Golden Hands. The prices are very fair for the work that they do and I would not hesitate to recommend this spa to my friends."</p>
+          <p class="r-text">"I have been a customer of this spa for eight years. The spa is clean, has a feeling of good
+            energy, and the quality of their work is consistently good. I have tried several Thai massage spas, but I
+            keep coming back to Golden Hands. The prices are very fair for the work that they do and I would not
+            hesitate to recommend this spa to my friends."</p>
           <div class="r-auth">
             <div class="r-av">J</div>
             <div>
@@ -447,8 +580,10 @@ They gave me a 30 minute massage and very professional treatment from the moment
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I have had three massages now, by two different therapists. I have a pinched nerve in my neck that has left me in a lot of pain regularly. Every time I walk out after getting a massage, I have significantly less pain, and my nerve damage gets better (less) with each visit.
-Highly recommend"</p>
+          <p class="r-text">"I have had three massages now, by two different therapists. I have a pinched nerve in my
+            neck that has left me in a lot of pain regularly. Every time I walk out after getting a massage, I have
+            significantly less pain, and my nerve damage gets better (less) with each visit.
+            Highly recommend"</p>
           <div class="r-auth">
             <div class="r-av">C</div>
             <div>
@@ -459,7 +594,8 @@ Highly recommend"</p>
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"Came in today for the first time. Tina was helpful and professional and Ava did a spectacular job. Will certainly be back."</p>
+          <p class="r-text">"Came in today for the first time. Tina was helpful and professional and Ava did a
+            spectacular job. Will certainly be back."</p>
           <div class="r-auth">
             <div class="r-av">A</div>
             <div>
@@ -470,8 +606,11 @@ Highly recommend"</p>
         </div>
         <div class="r-card">
           <div class="r-stars">★★★★★</div>
-          <p class="r-text">"I've been in terrible pain last several weeks and today I went to go see if they take walk ins and they do
-They gave me a 30 minute massage and very professional treatment from the moment I walked in I will definitely be returning and letting my friends and family to come here prices are reasonable AAA massage therapy glad I've found my massage place here locally."</p>
+          <p class="r-text">"I've been in terrible pain last several weeks and today I went to go see if they take walk
+            ins and they do
+            They gave me a 30 minute massage and very professional treatment from the moment I walked in I will
+            definitely be returning and letting my friends and family to come here prices are reasonable AAA massage
+            therapy glad I've found my massage place here locally."</p>
           <div class="r-auth">
             <div class="r-av">M</div>
             <div>
@@ -589,7 +728,8 @@ They gave me a 30 minute massage and very professional treatment from the moment
       <div class="footer-grid">
         <div class="f-brand">
           <a href="#" class="logo"><span>Golden Hands </span>Therapeutic Massage</a>
-          <p>Rejuviante your body and mind at Golden Hands Therapeutic Massage serving Santa Clarita residents living in Valencia, Saugus, West Ranch, Newhall, Castaic, and Canyon Country.</p>
+          <p>Rejuviante your body and mind at Golden Hands Therapeutic Massage serving Santa Clarita residents living in
+            Valencia, Saugus, West Ranch, Newhall, Castaic, and Canyon Country.</p>
           <div class="f-socials">
             <!-- <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="f-soc"
               aria-label="Instagram">
@@ -600,8 +740,8 @@ They gave me a 30 minute massage and very professional treatment from the moment
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
               </svg>
             </a> -->
-            <a href="https://www.yelp.com/biz/golden-hands-therapeutic-massage-santa-clarita" target="_blank" rel="noopener" class="f-soc"
-              aria-label="Yelp">
+            <a href="https://www.yelp.com/biz/golden-hands-therapeutic-massage-santa-clarita" target="_blank"
+              rel="noopener" class="f-soc" aria-label="Yelp">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                 stroke-linecap="round">
                 <circle cx="12" cy="12" r="10" />
@@ -609,7 +749,7 @@ They gave me a 30 minute massage and very professional treatment from the moment
             </a>
           </div>
         </div>
-        
+
         <div class="f-col">
           <h4>Navigation</h4>
           <ul>
@@ -709,6 +849,13 @@ They gave me a 30 minute massage and very professional treatment from the moment
       });
     }, { threshold: 0.4 });
     sections.forEach(s => secObs.observe(s));
+
+    // ── Wax price toggle ─────────────────────────────
+    function toggleWax(btn) {
+      const prices = document.getElementById('wax-prices');
+      prices.classList.toggle('open');
+      btn.textContent = prices.classList.contains('open') ? 'Hide Prices ↑' : 'View Prices ↓';
+    }
   </script>
 </body>
 
