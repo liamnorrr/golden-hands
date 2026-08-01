@@ -361,28 +361,26 @@
               <h3>Waxing Services</h3>
               <p>Smooth, professional waxing for both women and men. We use high-quality wax to ensure a comfortable
                 experience with long-lasting results.</p>
-              <button class="btn btn-gold wax-toggle" onclick="toggleWax(this)">View Prices ↓</button>
-
-              <!-- Wax Price List (hidden by default) -->
+              <!-- Wax Price List -->
               <div class="wax-prices" id="wax-prices">
                 <div class="wax-grid">
-                  <div class="wax-table">
-                    <h4 class="wax-title">Women</h4>
+                  <!-- <div class="wax-table"> -->
+                    <!-- <h4 class="wax-title">Women</h4> -->
                     <div class="wax-row"><span>Eyebrow</span><span>$15</span></div>
                     <div class="wax-row"><span>Upper Lip</span><span>$10</span></div>
                     <div class="wax-row"><span>Chin</span><span>$10</span></div>
                     <div class="wax-row"><span>Cheeks</span><span>$15</span></div>
                     <div class="wax-row"><span>Full Face</span><span>$40</span></div>
                     <div class="wax-row"><span>Under Arm</span><span>$20</span></div>
-                    <div class="wax-row"><span>Half Arm</span><span>$25</span></div>
-                    <div class="wax-row"><span>Full Arm</span><span>$50</span></div>
-                    <div class="wax-row"><span>Half Leg</span><span>$35</span></div>
-                    <div class="wax-row"><span>Full Leg</span><span>$60</span></div>
+                    <div class="wax-row"><span>Half Arm</span><span>$30</span></div>
+                    <div class="wax-row"><span>Full Arm</span><span>$60</span></div>
+                    <div class="wax-row"><span>Half Leg</span><span>$40</span></div>
+                    <div class="wax-row"><span>Full Leg</span><span>$70</span></div>
                     <div class="wax-row"><span>Bikini</span><span>$40</span></div>
                     <div class="wax-row"><span>Buttocks</span><span>$40</span></div>
-                    <div class="wax-row"><span>Brazilian</span><span>$50</span></div>
+                    <div class="wax-row"><span>Brazilian</span><span>$60</span></div>
                   </div>
-                  <div class="wax-table">
+                  <!-- <div class="wax-table">
                     <h4 class="wax-title">Men</h4>
                     <div class="wax-row"><span>Eyebrow</span><span>$15</span></div>
                     <div class="wax-row"><span>Nose</span><span>$10</span></div>
@@ -399,7 +397,7 @@
                     <div class="wax-row"><span>Buttocks</span><span>$40</span></div>
                     <div class="wax-row"><span>Brazilian</span><span>$60</span></div>
                     <div class="wax-row"><span>Toes</span><span>$10</span></div>
-                  </div>
+                  </div> -->
                 </div>
                 <!-- <a href="#contact" class="btn btn-gold" style="margin-top:1.5rem">Book Waxing</a> -->
               </div>
@@ -847,12 +845,6 @@
     }, { threshold: 0.4 });
     sections.forEach(s => secObs.observe(s));
 
-    // ── Wax price toggle ─────────────────────────────
-    function toggleWax(btn) {
-      const prices = document.getElementById('wax-prices');
-      prices.classList.toggle('open');
-      btn.textContent = prices.classList.contains('open') ? 'Hide Prices ↑' : 'View Prices ↓';
-    }
   </script>
 </body>
 

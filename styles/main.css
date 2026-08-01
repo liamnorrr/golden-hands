@@ -1359,22 +1359,8 @@ footer {
   letter-spacing: .08em;
 }
 
-/* Wax toggle button */
-.wax-toggle {
-  transition: var(--ease);
-}
-
 /* Wax price list */
 .wax-prices {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .6s cubic-bezier(.25, .46, .45, .94), opacity .4s ease;
-  opacity: 0;
-}
-
-.wax-prices.open {
-  max-height: 1200px;
-  opacity: 1;
   margin-top: 1.5rem;
 }
 
